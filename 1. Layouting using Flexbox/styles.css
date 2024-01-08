@@ -26,31 +26,47 @@
 
 .red{
     background-color: red;
+    align-self: flex-start;
+    margin-left: auto;
+    
 }
 
 .blue{
     background-color: blue;
+    flex-grow: 2;
+    order: 1;
 }
 
 .green{
     background-color: green;
+    flex-grow: 1;
+    margin-right: auto;
 }
 
 
 /* TODO 1 */
 .todo-1-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
     /* TODO 1.1.1 Set the display of this div to flex*/
     /* TODO 1.1.2 Set the flex direction to row. Then set it to column. What's the difference?*/
-    /* Answer: */
+    /* Answer: When i change the flex direction to row it became horizontal and if it is in column its vertical */
     /* TODO 1.1.3 Set the flex direction to row. Then enable flex wrap. What does wrap do? */
-    /* Answer: */
+    /* Answer: when resizing it make the box go below*/
     /* Todo 1.1.4 Set the gap of the container to 10px. Now change it to 20px. What does gap do? */
-    /* Answer: */
+    /* Answer: The space between boxes change depending on the pixels */
 
 }
 
 /* TODO 2 */
 .todo-2-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:center; 
     /* TODO 1.2.1 Set the display to flex and flex direction to row */
     /* TODO 1.2.2 Justify the content to start, then end, then center. Make sure to see how the position of the divs change*/
     /* TODO 1.2.3 Align the items start, then end, then center. Make sure to see how the position of the divs change*/
@@ -59,13 +75,15 @@
 
 /* TODO 3 */
 .todo-3-container{
+    display: flex;
+    align-items:center; 
     /* Todo 1.3.1 Set the display to flex and align items center */
 }
 
 /* Select the red box */
 .todo-3-container __{
     /* Todo 1.3.2 Align this item to start. Try out the other possible values. What happens? */
-    /* Answer: */
+    /* Answer: it changes the position of the red box */
 }
 
 /* Select the green box */
@@ -81,6 +99,7 @@
 
 /* TODO 4 */
 .todo-4-container{
+    display: flex;
     /* Set the display to flex */
 }
 
@@ -97,9 +116,8 @@
 /* Select the blue box */
 .todo-4-container ___{
     /* Set the order to  1. Try chaging the order of the other divs. What does order do?*/
-    /* Answer: */
+    /* Answer:it changes the order of the boxes */
 }
-
 
 
 
